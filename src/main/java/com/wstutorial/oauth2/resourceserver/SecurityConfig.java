@@ -12,7 +12,7 @@ import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    String jwkSetUri = "http://localhost:8090/auth/realms/wstutorial/protocol/openid-connect/certs";
+    String jwkSetUri = "http://localhost:8080/auth/realms/master/protocol/openid-connect/certs";
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
